@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BackupImage from "../assets/images/backup.png";
+import { useTitle } from "../hooks/useTitle";
 
 export const MovieDetail = () => {
   const params = useParams();
@@ -21,6 +22,8 @@ export const MovieDetail = () => {
     }
     fetchMovie();
   }, []);
+
+  useTitle(movie.title)
 
   return (
     <main>
