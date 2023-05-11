@@ -1,7 +1,13 @@
+import { Card } from "../components";
+
 export const MovieList = () => {
   return (
     <main>
-      <div className="text-center text-red-800">MovieList</div>
+      <section className="max-7xl py-7 mx-auto">
+        <div className="flex flex-wrap justify-start">
+          <Card />
+        </div>
+      </section>
     </main>
-  )
-}
+  );
+};
