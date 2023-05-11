@@ -6,7 +6,7 @@ export const MovieList = ({ apiPath }) => {
   return (
     <main>
       <section className="max-7xl py-7 mx-auto">
-        <div className="flex flex-wrap justify-start">
+        <div className="flex flex-wrap justify-start other:justify-evenly">
           {movies?.map((movie) => (
             <Card key={movie.id} movie={movie} />
           ))}
